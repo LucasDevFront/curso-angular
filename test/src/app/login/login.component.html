@@ -1,0 +1,15 @@
+<div class="container-form">
+<div class="box-form">
+  <img id="logo" src="./assets/Voraz.jpg" alt="logovoraz">
+<div class="form-group">
+    <label for="staticEmail">Usuário</label>
+        <input [(ngModel)]="usuario.nome" type="text" class="form-control" id="usuario">
+  </div>
+  <div class="form-group">
+    <label for="inputPassword">Password</label>
+      <input [(ngModel)]="usuario.senha"type="password" class="form-control" id="senha">
+     <button id="box-bt" type="submit" class="btn btn-primary box-bt" (click)="fazerLogin()">Entrar</button>
+
+  </div>
+</div>
+</div>

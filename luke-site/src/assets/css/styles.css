@@ -1,0 +1,109 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.container-main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color:#333;
+}
+
+.box-form {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ width: 80%;
+ justify-content: space-between;
+ margin: 0 auto;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 50%;
+    color: #fff;
+}
+
+.box-bt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    width: 200px;
+    font-size: 1.3rem;
+    margin-top: 30px;
+}
+
+.nav-main {
+    width: 100%;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 450px;
+    
+}
+
+.img-cover {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    padding: 0 15px;
+    background-color: #333;
+    color: #efefef;
+    font-size: 1.3em;
+}
+
+.title {
+    height: 50px;
+}
+
+.box-ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.box-li {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    list-style: none;
+    height: 50px;
+}
+
+.box-li:hover {
+    cursor: pointer;
+    background-color: #222;
+    display: block;
+}
+
+.box-li a {
+    color: #efefef;
+    text-decoration: none;
+}
+
+.barra {
+    background-color: brown;
+    color: #efefef;
+    
+}

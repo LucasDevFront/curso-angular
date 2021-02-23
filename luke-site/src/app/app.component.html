@@ -1,0 +1,69 @@
+<div class="container-main">
+
+  <nav class="nav">
+    <span class="title">Luke Santos</span>
+
+    <ul class="box-ul">
+      <li class="box-li"><a routerLink="">Home</a></li>
+      <li class="box-li"><a routerLink="/Bio">Biografia</a></li>
+      <li class="box-li"><a routerLink="/Discografia">Discografia</a></li>
+      <li class="box-li"><a routerLink="/Loja">Loja</a></li>
+    </ul>
+  </nav>
+ 
+
+
+
+  <!-- <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Luke Santos</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a routerLink="" class="nav-link active">Home <span class="sr-only">(current)</span></a>
+        <a routerLink="/Bio"class="nav-link">Biografia</a>
+        <a routerLink="/Discografia"class="nav-link">Discografia</a>
+        <a routerLink="/Loja"class="nav-link">Loja</a>
+      </div>
+    </div>
+  </nav> -->
+
+
+  <div id="mainSlider" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <!-- <img src="assets/IMG_0498.jpg" class="d-block w-100" alt="IMG_0498"> -->
+        <img src="./assets/IMG_0498.jpg" class="img-cover" alt="IMG_0498">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/IMG_0532.jpg" class="img-cover" alt="IMG_0532">
+      </div>
+    </div>
+    <div class="shadow-lg p-3 barra">Larger shadow</div>
+
+    <!-- <form class="box-form">
+      <div class="form-group">
+        <h2>Cadastro para aula de batera grátis</h2>
+        <label for="exampleInputEmail1">Nome</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">E-mail</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        <button type="submit" class="btn btn-primary box-bt">Submit</button>
+      </div>
+      
+    </form> -->
+
+    
+  </div>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+</div>

@@ -1,0 +1,73 @@
+<section *ngIf="mostrarMenu">
+<div class="container-main">
+
+    <!-- menu  -->
+    <img id="logo" src="./assets/Voraz.jpg" alt="logovoraz">
+    <nav class="nav">
+      <!-- <span class="title">Voraz</span> -->
+        <ul class="box-ul">
+          <li class="box-li"><a routerLink="">Home</a></li>
+        <li class="box-li"><a routerLink="/produtos" [queryParams]="{pagina:1}">Roupas</a></li>
+        <li class="box-li"><a routerLink="/ajuda" [queryParams]="{pagina:1}">Acessorios</a></li>
+        <li class="box-li"> <a routerLink="/sobre" routerLinkActive="active">Sobre</a></li>
+        <li class="box-li"> <a routerLink="/parceiros" routerLinkActive="active">Nossos Parceiros</a></li>
+        
+      </ul>
+    </nav>
+</div>
+
+<!-- Fotos -->
+<div class="carousel-all">
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./assets/IMG_2434.jpg" class="d-block w-100" alt="PRIMEIRA IMG">
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/IMG_2445.jpg" class="d-block w-100" alt="SEGUNDA IMG">
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/IMG_2434.jpg" class="d-block w-100" alt="TERCEIRA">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+  </div>
+</div>
+</section>
+
+<div class="page">
+  <router-outlet></router-outlet>
+</div>
+
+  <!-- Sobre a marca
+  <div class="box">
+  <div  class="sobre">
+  <div id="sobre">
+    <h3 class="sobre-item">ABOUT ME</h3>
+    <p class="sobre-item"><em>I love photography</em></p>
+    <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+      qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p id="name"><b><i></i>JOHNNY VORAZ</b></p><br>
+        <img id= "foto-me" src="./assets/IMG_2388.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+     
+
+    <div class="sobre-main">
+      <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+   -->

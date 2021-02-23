@@ -1,0 +1,55 @@
+<form id=formId (ngSubmit)="onSubmit(form)"  #form="ngForm" class="form-horizontal">
+  <div>
+    <div class="form-group" [ngClass]="aplicaCssErro(nome)">
+      <div class="col-sm-12">
+        <label for="exampleFormControlInput1" class="form-label">Nome</label>
+      </div>
+      <div class="col-sm-12">
+        <input type="nome" class="form-control" id="nome" placeholder="Nome" [(ngModel)]="usuario.nome"
+          [ngModelOptions]="{standalone: true}" required #nome="ngModel">
+        <!-- condigo para verificação se o angular esta fazendo o processo corretamente -->
+        <!-- <div>
+{{nome.className }}
+</div> -->
+        <app-campo-control [mostrarErro]="verificaValidTouched(nome)" msgErro="Nome obrigatório.">
+        </app-campo-control>
+
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-12">
+  </div>
+  <div class="form-group">
+    <div class="col-sm-12">
+      <label for="exampleFormControlTextarea1" class="form-label">E-mail</label>
+      <textarea class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"
+        [(ngModel)]="usuario.email" [ngModelOptions]="{standalone: true}" required email #email="ngModel"></textarea>
+      <app-campo-control [mostrarErro]="verificaValidTouched(email)" msgErro="E-mail obrigatório.">
+      </app-campo-control>
+    </div>
+  </div>
+
+  <div ngModelGroup="endereço">   
+
+  
+  <div class="form-group">
+    <div class="cep">
+      <label for="cep" class="control-label">CEP</label>
+      <input type="text" class="form-control" id="cep" name="cep" ngModel required #cep="ngModel"
+      (blur)="consultaCEP($event.target)">
+      <app-campo-control [mostrarErro]="verificaValidTouched(cep)" msgErro="Cep obrigatório.">
+      </app-campo-control>
+    </div>
+    <div class="Rua">
+      <label for="rua" class="control-label">Rua</label>
+      <input type="text" class="form-control" id="cep" name="rua" ngModel required #numero="ngModel">
+      
+      <div class="bairro">
+        <label for="bairro" class="control-label">Bairro</label>
+        <input type="text" class="form-control" id="bairro" name="bairro">
+      </div>
+    </div>
+    <button type="submit" class="btn-btn-primary" [disabled]="form.form.invalid">Submit</button>
+  </div>
+  <!-- <app-form-debug [form]="form" [name]="nome" [email]="email"></app-form-debug> -->
+</div> 

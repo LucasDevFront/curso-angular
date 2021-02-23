@@ -1,0 +1,74 @@
+.box-alunos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    width: 100%;
+    min-height: 100%;
+    /* background-color: black; */
+    color: #efefef;
+}
+.box-group {
+    display: flex;
+    width: 50%;
+    height: 50vh;
+
+}
+
+.bt-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-bt {
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: blanchedalmond;
+    display: flex;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+}
+
+.box-bt:hover {
+    display: flex;
+    align-items: center;
+    padding: 10px ;
+    height: 50px;
+    justify-self: center;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+/* .grid1 {
+    display: grid;
+    background-color: brown;
+    grid-template-columns: repeat(3, 1fr) ;
+    max-width: 800px;
+} */
+
+.grid2 {
+    display: grid;
+    /* background-color: chartreuse; */
+    grid-template-columns: repeat(3, 1fr) ;
+    max-width: 800px;
+    margin: right;
+    color: black;
+
+}
+
+/* 
+.info {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+} */

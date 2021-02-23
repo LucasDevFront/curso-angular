@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link"
+          [class.ative]="aba=='home'"(click)="aba='home'">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"[class.ative]="aba=='link'"(click)="aba='link'">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link"[class.ative]="aba=='produtos'"(click)="aba='produtos'">Produtos</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+    <div class="container"[ngSwitch]="aba">
+        <p *ngSwitchCase="'link'">você esta no link.</p>
+        <p *ngSwitchCase="'home'">você esta no home.</p>
+        <p *ngSwitchCase="'produtos'">você esta no produtos.</p>
+        <p *ngSwitchDefault></p>
+    </div>

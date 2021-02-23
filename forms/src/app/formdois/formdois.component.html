@@ -1,0 +1,55 @@
+<h1>
+  Formulário Reativo
+</h1>
+
+<form class="form-horizontal" [formGroup]="formulario" (ngSubmit)="onSubmit()"> 
+  <div>
+    <div class="form-group" >
+      <div class="col-sm-12">
+        <label for="exampleFormControlInput1" class="form-label">Nome</label>
+      
+    </div>
+
+      <div class="col-sm-12">
+        <input type="nome" class="form-control" id="nome" placeholder="Nome" formControlName="nome">
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-12">
+  </div>
+  <div class="form-group">
+    <div class="col-sm-12">
+      <label for="exampleFormControlTextarea1" class="form-label">E-mail</label>
+      
+      <textarea class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" formControlName="email"></textarea>
+    </div>
+  </div>
+<div ngModelGroup="endereço">   
+
+      
+<div formGroupName="endereco">
+<div class="form-group">
+  <div class="cep">
+    <label for="cep" class="control-label">CEP</label>
+    <input type="text" class="form-control" id="cep" 
+    formControlName="cep" (blur)="consultaCEP()">
+    
+  </div>
+  <div class="Rua">
+    <label for="rua" class="control-label">Rua</label>
+    <input type="text" class="form-control" id="rua" formControlName="rua">
+    
+    <div class="bairro">
+      <label for="bairro" class="control-label">Bairro</label>
+      <input type="text" class="form-control" id="bairro"formControlName="bairro">
+    </div>
+    <div class="estado">
+      <label for="bairro" class="control-label">Estado</label>
+      <input type="text" class="form-control" id="bairro"formControlName="estado">
+    </div>
+  </div>
+</div>
+<button type="submit" class="btn-btn-primary">Submit</button>
+<button class="btn-btn-primary"(click)="resetar()">Cancelar</button>
+
+<app-form-debug [form]="formulario"></app-form-debug>

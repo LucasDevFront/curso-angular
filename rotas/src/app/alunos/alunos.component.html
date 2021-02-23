@@ -1,0 +1,19 @@
+<div class="container">
+<div class="box-alunos">
+
+  <p>Lista de alunos</p>
+
+  <div class="box-group">
+
+    <div class="bt-group">
+      <button type="button" class="box-bt" *ngFor="let aluno of alunos" [routerLink]="[aluno.id]">
+        {{aluno.nome}}
+      </button>
+    </div>
+    <div class="grid2">
+      <router-outlet></router-outlet>
+    </div>
+
+  </div>
+</div>
+</div>
